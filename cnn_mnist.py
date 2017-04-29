@@ -155,8 +155,12 @@ def main(unused_argv):
   # Evaluate the model and print results
   eval_results = mnist_classifier.evaluate(
       x=eval_data, y=eval_labels, metrics=metrics)
+  print('------------')
+  print(type(eval_results))
   print(eval_results)
+  print('------------')
 
+  
 
 if __name__ == "__main__":
   tf.app.run()
